@@ -1,4 +1,4 @@
-
-pip flask_sqlalchemy 
-pip qrcode 
-pip pillow
+pip install flask
+pip install flask_sqlalchemy 
+pip install qrcode 
+pip install pillow
