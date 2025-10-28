@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Booking Successful</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h2>🎉 Booking Successful!</h2>
+  <p>Thank you <b>{{ booking.name }}</b> for booking the event: <b>{{ booking.event_name }}</b></p>
+  <p>Your Booking ID: <b>{{ booking.id }}</b></p>
+  <p>Scan this QR code at the event gate:</p>
+  <img src="/{{ booking.qr_code }}" alt="QR Code" width="200">
+  <br><br>
+  <a href="/" class="btn">Go Home</a>
+</body>
+</html>

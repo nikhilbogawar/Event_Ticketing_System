@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Event Ticket</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h2>Book Your Ticket</h2>
+  <form method="POST">
+    <label>Name:</label><input type="text" name="name" required><br>
+    <label>Email:</label><input type="email" name="email" required><br>
+    <label>Event:</label>
+    <select name="event" required>
+      <option>Music Concert</option>
+      <option>Tech Conference</option>
+      <option>Art Festival</option>
+    </select><br>
+    <button type="submit">Generate Ticket</button>
+  </form>
+</body>
+</html>
